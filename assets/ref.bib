@@ -1,0 +1,140 @@
+@incollection{example_invited_talk,
+  author = {J. Doe},
+  note = {Example Location},
+  publisher = {Example Talk Name},
+  year = {2040},
+  keywords = "invited",
+}
+
+@software{example_software,
+  author = {J. Doe},
+  title = {Example software},
+  url = {https://example.com},
+  date = {2040},
+}
+
+@inproceedings{example_proceeding,
+    Author = {J. Doe},
+    Year = {2040},
+    Title = {Example title},
+    Booktitle = {Example Book},
+    Address = {Pasadena, CA},
+    file = {example_proceeding.pdf},
+    abstract = {Example abstract.},
+}
+
+@incollection{example_conference,
+    author = {J. Doe},
+    title = {Example talk},
+    note = {Example Conference},
+    year = {2040},
+}
+
+@unpublishedunderreview{nayak2022rotate,
+  title={Rotate the ReLU to implicitly sparsify deep networks},
+  author={Nayak, Nancy and Kalyani, Sheetal},
+  journal={arXiv preprint arXiv:2206.00488},
+  year={2022},
+  doi={arXiv:2206.00488v1},
+  abstract={In the era of Deep Neural Network based solutions for a variety of real-life tasks, having a compact and energy-efficient deployable model has become fairly important. Most of the existing deep architectures use Rectifier Linear Unit (ReLU) activation. In this paper, we propose a novel idea of rotating the ReLU activation to give one more degree of freedom to the architecture. We show that this activation wherein the rotation is learned via training results in the elimination of those parameters/filters in the network which are not important for the task. In other words, rotated ReLU seems to be doing implicit sparsification. The slopes of the rotated ReLU activations act as coarse feature extractors and unnecessary features can be eliminated before retraining. Our studies indicate that features always choose to pass through a lesser number of filters in architectures such as ResNet and its variants. Hence, by rotating the ReLU, the weights or the filters that are not necessary are automatically identified and can be dropped thus giving rise to significant savings in memory and computation. Furthermore, in some cases, we also notice that along with saving in memory and computation we also obtain improvement over the reported performance of the corresponding baseline work in the popular datasets such as MNIST, CIFAR-10, CIFAR-100, and SVHN.}
+}
+
+@unpublishedunderreview{nayak2022drl,
+  title={A DRL Approach for RIS-Assisted Full-Duplex UL and DL Transmission: Beamforming, Phase Shift and Power Optimization},
+  author={Nayak, Nancy and Kalyani, Sheetal and Suraweera, Himal A},
+  journal={arXiv preprint arXiv:2212.13854},
+  year={2022},
+  abstract={In this work, we present a two-stage deep reinforcement learning (DRL) approach for a full-duplex (FD) transmission scenario that predicts the phase-shifts of the reconfigurable intelligent surface (RIS), active beamformers at the base station (BS) and the transmit powers of BS and uplink users to maximize the weighted sum-rate of uplink and downlink users. The proposed approach does not depend on the channel state information (CSI) or the knowledge of residual self-interference (SI) for its prediction. As the residual SI cancellation and beamformer design are coupled problems, the first stage of the two-stage framework uses a least squares method to cancel the residual SI partially and initiate learning. The second stage uses DRL to make predictions and achieve performance close to methods with perfect CSI knowledge. The proposed method also works in scenarios with mobile users. Further, the proposed DRL framework, which predicts the quantized RIS phase shifts, reduces the signaling from BS to the RISs using 32 times fewer bits than the continuous version. The quantized methods have reduced action space and, therefore, faster convergence; with sufficient training, the UL and DL rates for the quantized phase method are 7.1% and 22.28% better than the continuous phase method.},
+  doi={arXiv:2212.13854v2}
+}
+
+@unpublishedunderreview{sadhukhan2023binarized,
+  title={Binarized ResNet: Enabling Robust Automatic Modulation Classification at the resource-constrained Edge}, 
+  author={Deepsayan Sadhukhan and Nitin Priyadarshini Shankar and Nancy Nayak and Thulasi Tholeti and Sheetal Kalyani},
+  year={2023},
+  eprint={2110.14357},
+  archivePrefix={arXiv},
+  primaryClass={cs.IT},
+  doi={arXiv:2110.14357v2},
+  abstract={Recently, deep neural networks (DNNs) have been used extensively for automatic modulation classification (AMC), and the results have been quite promising. However, DNNs have high memory and computation requirements making them impractical for edge networks where the devices are resource-constrained. They are also vulnerable to adversarial attacks, which is a significant security concern. This work proposes a rotated binary large ResNet (RBLResNet) for AMC that can be deployed at the edge network because of low memory and computational complexity. The performance gap between the RBLResNet and existing architectures with floating-point weights and activations can be closed by two proposed ensemble methods: (i) multilevel classification (MC), and (ii) bagging multiple RBLResNets while retaining low memory and computational power. The MC method achieves an accuracy of 93.39% at 10dB over all the 24 modulation classes of the Deepsig dataset. This performance is comparable to state-of-the-art (SOTA) performances, with 4.75 times lower memory and 1214 times lower computation. Furthermore, RBLResNet also has high adversarial robustness compared to existing DNN models. The proposed MC method with RBLResNets has an adversarial accuracy of 87.25% over a wide range of SNRs, surpassing the robustness of all existing SOTA methods to the best of our knowledge. Properties such as low memory, low computation, and the highest adversarial robustness make it a better choice for robust AMC in low-power edge devices.},
+}
+@unpublished{raj2020understanding,
+  title={Understanding learning dynamics of binary neural networks via information bottleneck},
+  author={Raj, Vishnu and Nayak, Nancy and Kalyani, Sheetal},
+  journal={arXiv preprint arXiv:2006.07522},
+  year={2020},
+  abstract={Compact neural networks are essential for affordable and power efficient deep learning solutions. Binary Neural Networks (BNNs) take compactification to the extreme by constraining both weights and activations to two levels, {+1,−1}. However, training BNNs are not easy due to the discontinuity in activation functions, and the training dynamics of BNNs is not well understood. In this paper, we present an information-theoretic perspective of BNN training. We analyze BNNs through the Information Bottleneck principle and observe that the training dynamics of BNNs is considerably different from that of Deep Neural Networks (DNNs). While DNNs have a separate empirical risk minimization and representation compression phases, our numerical experiments show that in BNNs, both these phases are simultaneous. Since BNNs have a less expressive capacity, they tend to find efficient hidden representations concurrently with label fitting. Experiments in multiple datasets support these observations, and we see a consistent behavior across different activation functions in BNNs.},
+  doi={arXiv:2006.07522v1}
+}
+
+@unpublished{nayak2020green,
+  title={Green detnet: Computation and memory efficient detnet using smart compression and training},
+  author={Nayak, Nancy and Tholeti, Thulasi and Srinivasan, Muralikrishnan and Kalyani, Sheetal},
+  journal={arXiv preprint arXiv:2003.09446},
+  year={2020},
+  abstract={This paper introduces an incremental training framework for compressing popular Deep Neural Network (DNN) based unfolded multiple-input-multiple-output (MIMO) detection algorithms like DetNet. The idea of incremental training is explored to select the optimal depth while training. To reduce the computation requirements or the number of FLoating point OPerations (FLOPs) and enforce sparsity in weights, the concept of structured regularization is explored using group LASSO and sparse group LASSO. Our methods lead to an astounding 98.9% reduction in memory requirement and 81.63% reduction in FLOPs when compared with DetNet without compromising on BER performance.},
+  doi={arXiv:2003.09446v2}
+}
+@unpublished{sharma2021bayesaoa,
+  title={BayesAoA: A Bayesian method for Computation Efficient Angle of Arrival Estimation},
+  author={Sharma, Akshay and Nayak, Nancy and Kalyani, Sheetal},
+  journal={arXiv preprint arXiv:2110.07992},
+  year={2021},
+  doi={arXiv:2110.07992v1},
+  abstract={The angle of Arrival (AoA) estimation is of great interest in modern communication systems. Traditional maximum likelihood-based iterative algorithms are sensitive to initialization and cannot be used online. We propose a Bayesian method to find AoA that is insensitive towards initialization. The proposed method is less complex and needs fewer computing resources than traditional deep learning-based methods. It has a faster convergence than the brute-force methods. Further, a Hedge type solution is proposed that helps to deploy the method online to handle the situations where the channel noise and antenna configuration in the receiver change over time. The proposed method achieves 92% accuracy in a channel of noise variance 10−6 with 19.3% of the brute-force method's computation.}
+}
+@unpublished{nayak2020optimal,
+  title={What is the optimal depth for deep-unfolding architectures at deployment?},
+  author={Nayak, Nancy and Tholeti, Thulasi and Srinivasan, Muralikrishnan and Kalyani, Sheetal},
+  journal={arXiv preprint arXiv:2003.09446},
+  year={2020},
+  doi={arXiv:2003.09446v1},
+  abstract={Recently, many iterative algorithms proposed for various applications such as compressed sensing, MIMO Detection, etc. have been unfolded and presented as deep networks; these networks are shown to produce better results than the algorithms in their iterative forms. However, deep networks are highly sensitive to the hyperparameters chosen. Especially for a deep unfolded network, using more layers may lead to redundancy and hence, excessive computation during deployment. In this work, we consider the problem of determining the optimal number of layers required for such unfolded architectures. We propose a method that treats the networks as experts and measures the relative importance of the expertise provided by layers using a variant of the popular Hedge algorithm. Based on the importance of the different layers, we determine the optimal layers required for deployment. We study the effectiveness of this method by applying it to two recent and popular deep-unfolding architectures, namely DetNet and TISTANet.}
+}
+@article{nayak2020leveraging,
+  title={Leveraging online learning for CSS in frugal IoT network},
+  author={Nayak, Nancy and Raj, Vishnu and Kalyani, Sheetal},
+  journal={IEEE Transactions on Cognitive Communications and Networking},
+  volume={6},
+  number={4},
+  pages={1350--1364},
+  year={2020},
+  publisher={IEEE},
+  doi={10.1109/TCCN.2020.2985354},
+  abstract={We present a novel method for centralized collaborative spectrum sensing for IoT network leveraging cognitive radio network. Based on an online learning framework, we propose an algorithm to efficiently combine the individual sensing results based on the past performance of each detector. Additionally, we show how to utilize the learned normalized weights as a proxy metric of detection accuracy and selectively enable the sensing at detectors. Our results show improved performance in terms of inter-user collision and misdetection. Further, by selectively enabling some of the devices in the network, we propose a strategy to extend the field life of devices without compromising on detection accuracy.}
+}
+@article{raj2022deep,
+  title={Deep reinforcement learning based blind mmwave MIMO beam alignment},
+  author={Raj, Vishnu and Nayak, Nancy and Kalyani, Sheetal},
+  journal={IEEE Transactions on Wireless Communications},
+  volume={21},
+  number={10},
+  pages={8772--8785},
+  year={2022},
+  publisher={IEEE},
+  abstract={Directional beamforming is a crucial component for realizing robust wireless millimeter wave (mmWave) communication systems. Beam alignment using brute-force search introduces time overhead, and the location aided blind beam alignment adds additional hardware requirements to the system. In this paper, we propose a blind beam alignment method based on the radio frequency (RF) fingerprints of the user equipment obtained from the base stations. The proposed system performs blind beam alignment using deep reinforcement learning on a multiple-base station cellular environment with multiple mobile users. We present a novel neural network architecture that can handle a mix of both continuous and discrete actions and use policy gradient methods to train the model. Our results show that the proposed method can achieve a data rate of up to four times the data rate of the traditional method without any overheads.},
+  doi={10.1109/TWC.2022.3169900}
+}
+@article{vikas2021realizing,
+  title={Realizing neural decoder at the edge with ensembled bnn},
+  author={Vikas, Devannagari and Nayak, Nancy and Kalyani, Sheetal},
+  journal={IEEE Communications Letters},
+  volume={25},
+  number={10},
+  pages={3315--3319},
+  year={2021},
+  publisher={IEEE},
+  abstract={We propose extreme compression techniques like binarization, ternarization for Turbo code based Neural Decoders such as TurboAE. These methods reduce memory and computation by a factor of 64 and perform better than the quantized (with 1-bit or 2-bits) Neural Decoders. However, because of the limited representation capability of the Binary and Ternary networks, the performance is not as good as the real-valued decoder. To fill this gap, we further propose to ensemble 4 such weak performers to deploy in the edge to achieve a performance similar to the real-valued network. These ensemble decoders give a saving of 16 and 64 times in memory and computation respectively and help achieve performance the same as real-valued TurboAE.},
+  doi={10.1109/LCOMM.2021.3102319}
+}
+@article{nayak2020a,
+  title={A comprehensive study on binary optimizer and its applicability},
+  author={Nancy Nayak and Vishnu Raj and Sheetal Kalyani},
+  journal={ReScience C},
+  year={2020},
+  volume={6},
+  number={2},
+  doi={10.5281/zenodo.3818607},
+  note={Accepted at NeurIPS 2019 Reproducibility Challenge},
+  abstract={Binarized Neural Networks are paving a way towards the deployment of deep neural networks with less memory and computation. In this report, we present a detailed study on the paper titled "Latent Weights Do Not Exist: Rethinking Binarized Neural Network Optimization" which proposes a new optimization method for training BNN called BOP. We first investigate the effect of using latent weights in BNN for analyzing prediction performance in terms of accuracy. Next, a comprehensive ablation study on hyperparameters is provided. Finally, we explore the usability of BNN in denoising autoencoders. Code for all our experiments are available at  https://github.com/nancy-nayak/rethinking-bnn/.},
+}
